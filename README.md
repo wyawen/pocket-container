@@ -1,4 +1,4 @@
-# pocket-container
+## Pocket Node Docker Images 
 * [namenode](https://hub.docker.com/r/yawenw/pocket-namenode/)
 
 * [datanode-dram](https://hub.docker.com/r/yawenw/pocket-datanode-dram/)
@@ -8,6 +8,8 @@
 
 ## Build Docker Image for Pocket 
 ``` 
+# AWS AMI for Kubernetes: k8s-1.8-debian-jessie-amd64-hvm-ebs-2018-02-08 (ami-f5d2548d)
+
 git clone https://github.com/wyawen/pocket-container.git
 cd pocket-container
 
@@ -21,7 +23,7 @@ sudo docker build -t yawenw/pocket-datanode-dram .
 
 # Build ReFlex datanode 
 # pull and complie ReFlex following instructions at https://github.com/stanford-mast/reflex
-cp reflex_scripts/* reflex
+cp reflex_scripts/* reflex/
 cp Dockerfile-reflex Dockerfile
 sudo docker build -t yawenw/pocket-reflex .
 ```
