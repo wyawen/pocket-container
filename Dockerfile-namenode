@@ -16,6 +16,6 @@ RUN \
 WORKDIR /opt/crail
 COPY crail-apache/  /opt/crail/
 
-# Start Datanode
+# Start namenode
 CMD bash start_namenode.sh
 #CMD bash while_loop.sh

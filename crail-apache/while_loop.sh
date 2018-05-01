@@ -1,1 +1,1 @@
-while true ; do continue ; done
+taskset -c 1 ./inner_while_loop.sh 

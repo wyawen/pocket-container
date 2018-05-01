@@ -11,7 +11,8 @@ RUN \
   rsync \
   vim \
   openjdk-8-jdk \
-  net-tools iputils-ping
+  net-tools iputils-ping \
+  python python-pip && pip install psutil ifcfg
 
 WORKDIR /opt/crail
 COPY crail-apache/  /opt/crail/
