@@ -31,7 +31,7 @@ sudo docker build -t yawenw/pocket-reflex .
 ## Run Pocket in Container
 ``` 
 # Run namenode
-sudo docker run -it -v /dev:/dev yawenw/pocket-namenode
+sudo docker run -it --net=host --privileged yawenw/pocket-namenode
 
 # Run DRAM datanode
 sudo docker run -it --net=host --privileged -v /dev:/dev yawenw/pocket-datanode-dram
